@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Asgard Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg"></canvas>
+
+<h1 class="title">🌙 Asgard <span class="god-icon">⚡</span> Games</h1>
+
+<div class="content"></div>
+
+<!-- Expanded Game Modal -->
+<div id="gameModal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2 id="modalTitle"></h2>
+    <video id="modalTrailer" controls></video>
+    <div id="modalScreenshots">
+      <button id="prevSS">&lt;</button>
+      <img id="currentSS" src="" />
+      <button id="nextSS">&gt;</button>
+    </div>
+    <a id="modalLink" href="" target="_blank"><button>Download on itch.io</button></a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Zombie Survival",
+    "image": "game1.png",
+    "link": "https://yourname.itch.io/zombie",
+    "trailer": "trailer2.mp4",
+    "screenshots": ["game1.png","game2.png"]
+  },
+  {
+    "name": "soltare",
+    "image": "game3.png",
+    "link": "https://yourname.itch.io/zbie",
+    "trailer": "trailer1.mp4",
+    "screenshots": ["game3.1.png","game3.2.png"]
+  }
+]

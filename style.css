@@ -1,0 +1,155 @@
+/* --- Body & Background --- */
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  color: #08bf2d;
+  overflow-x: hidden;
+  background: black;
+}
+
+#bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* --- Rainbow Animated Title --- */
+.title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  animation: rainbow 5s linear infinite;
+  text-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+}
+
+.god-icon {
+  font-size: 1.2em;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+@keyframes rainbow {
+  0% { color: #ff0000; }
+  14% { color: #ff7f00; }
+  28% { color: #ffff00; }
+  42% { color: #00ff00; }
+  57% { color: #0000ff; }
+  71% { color: #4b0082; }
+  85% { color: #8f00ff; }
+  100% { color: #ff0000; }
+}
+
+/* --- Game Grid --- */
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* --- Game Card --- */
+.game {
+  background: rgba(0,0,0,0.7);
+  border: 2px solid rgb(225, 0, 255);
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.game:hover {
+  transform: scale(1.09);
+  box-shadow: 0 0 20px rgb(30, 0, 255);
+}
+
+.game img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.game h2 {
+  margin: 10px 0;
+}
+
+/* --- Modal --- */
+#gameModal {
+  display: none;
+  position: fixed;
+  top:0; left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.95);
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.modal-content {
+  position: absolute;
+  border-radius: 15px;
+  background: rgba(0,0,0,0.9);
+  padding: 20px;
+  color: #0ff;
+  text-align: center;
+  transition: transform 0.5s ease, top 0.5s ease, left 0.5s ease, width 0.5s ease, height 0.5s ease;
+  transform-origin: top left;
+}
+
+#closeModal {
+  float: right;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#modalTrailer {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+#modalScreenshots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#modalScreenshots img {
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid rgb(255, 0, 76);
+}
+
+#modalScreenshots button {
+  padding: 10px;
+  font-size: 1.5em;
+  background: rgb(255, 55, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+}
+
+#modalScreenshots button:hover {
+  background: #05e462;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #ff8400;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: rgb(33, 8, 255);
+}
